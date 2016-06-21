@@ -1,5 +1,6 @@
 package ar.com.sancorsalud.entidades.asociado;
 
+import ar.com.sancorsalud.entidades.general.Parentesco;
 import ar.com.sancorsalud.entidades.general.Persona;
 import ar.com.sancorsalud.entidades.producto.Plan;
 
@@ -7,9 +8,6 @@ public class Asociado extends Persona {
 
 	public Asociado()
 	{
-		this.Cuenta = new Cuenta();
-		this.Carnet = new Carnet();
-		this.Parentesco = new Parentesco();
 	}
 	
 	public Cuenta Cuenta;

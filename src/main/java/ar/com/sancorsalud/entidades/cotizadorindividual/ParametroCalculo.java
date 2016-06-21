@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package ar.com.sancorsalud.entidades.cotizadorindividual;
-
-import ar.com.sancorsalud.entidades.asociado.Parentesco;
+import ar.com.sancorsalud.entidades.general.Parentesco;
 import ar.com.sancorsalud.entidades.producto.Grilla;
 import java.util.Date;
 import java.util.List;

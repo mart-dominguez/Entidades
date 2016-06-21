@@ -5,16 +5,21 @@
  */
 package ar.com.sancorsalud.entidades.cotizadorindividual;
 
+import ar.com.sancorsalud.entidades.general.Parentesco;
+
 /**
  *
  * @author hzanuzzi
  */
 public class CapitaRango {
+    
     private Byte EdadDesde;
 	
     private Byte EdadHasta;
 	
-    private Byte Cantidad;
+    private Short Cantidad;
+    
+    private Parentesco Parentesco;
 
     public Byte getEdadDesde() {
         return EdadDesde;
@@ -32,13 +37,19 @@ public class CapitaRango {
         this.EdadHasta = EdadHasta;
     }
 
-    public Byte getCantidad() {
+    public Short getCantidad() {
         return Cantidad;
     }
 
-    public void setCantidad(Byte Cantidad) {
+    public void setCantidad(Short Cantidad) {
         this.Cantidad = Cantidad;
     }
-        
-        
+
+    public Parentesco getParentesco() {
+        return Parentesco;
+    }
+
+    public void setParentesco(Parentesco Parentesco) {
+        this.Parentesco = Parentesco;
+    }       
 }

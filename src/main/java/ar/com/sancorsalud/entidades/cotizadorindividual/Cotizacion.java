@@ -12,6 +12,8 @@ package ar.com.sancorsalud.entidades.cotizadorindividual;
 public class Cotizacion {
     
     private Integer Id;
+    
+    private short cantidadIntegrantes;
 
     public Integer getId() {
         return Id;
@@ -20,4 +22,13 @@ public class Cotizacion {
     public void setId(Integer Id) {
         this.Id = Id;
     }
+
+    public short getCantidadIntegrantes() {
+        return cantidadIntegrantes;
+    }
+
+    public void setCantidadIntegrantes(short cantidadIntegrantes) {
+        this.cantidadIntegrantes = cantidadIntegrantes;
+    }
+    
 }
