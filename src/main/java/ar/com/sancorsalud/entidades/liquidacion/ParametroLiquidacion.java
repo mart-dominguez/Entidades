@@ -9,6 +9,11 @@ import ar.com.sancorsalud.entidades.asociado.Cuenta;
 import ar.com.sancorsalud.entidades.cotizadorindividual.Cotizacion;
 import ar.com.sancorsalud.entidades.empresa.Empresa;
 import ar.com.sancorsalud.entidades.producto.Producto;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -29,5 +34,19 @@ public class ParametroLiquidacion {
     public Integer FechaInicialPeriodoLiquidacion()
     {
         return Integer.valueOf(this.PeriodoLiquidacion.toString() + "01");
+    }
+    
+    public Date getFechaInicialPeriodoLiquidacion()
+    {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+        
+        Date fecha = null;
+        try {
+            fecha = sdf.parse(this.PeriodoLiquidacion.toString() + "01");
+        } catch (ParseException ex) {
+            Logger.getLogger(ParametroLiquidacion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return fecha;
     }
 }
