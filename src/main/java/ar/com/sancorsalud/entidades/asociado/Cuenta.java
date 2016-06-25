@@ -5,7 +5,7 @@ public class Cuenta {
 
 	public TipoCuenta TipoCuenta;
 	
-	public int Numero;
+	public Integer Numero;
 	
 	public FormaPago FormaPago;
 }

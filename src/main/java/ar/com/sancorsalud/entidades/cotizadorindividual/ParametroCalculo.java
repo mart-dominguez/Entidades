@@ -22,8 +22,6 @@ public class ParametroCalculo {
     private Float remuneracion;
     
     private Date fechaVigencia;
-    
-    private Parentesco parentesco;
 
     public List<Grilla> getGrillas() {
         return grillas;
