@@ -15,6 +15,8 @@ import java.util.List;
  */
 public class ParametroCalculo {
     
+    private String usuario;
+    
     private List<Grilla> grillas;
     
     private List<CapitaRango> capitas;
@@ -23,6 +25,14 @@ public class ParametroCalculo {
     
     private Date fechaVigencia;
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+    
     public List<Grilla> getGrillas() {
         return grillas;
     }

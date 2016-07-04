@@ -31,14 +31,21 @@ public class Cotizacion implements Serializable {
     
     @Column(name="Fecha")
     private Date fecha;
+    
+    @Column(name="FechaVigencia")
+    private Date fechaVigencia;
    
     private short cantidadIntegrantes;
    
     @OneToMany(mappedBy = "Cotizacion")
-    private List<Grilla> grillas;
+    private List<PlanCotizadoIndividual> planesCotizados;
     
     @OneToMany(mappedBy = "Cotizacion")
     private List<CapitaRango> capitas;
+    
+    private Float remuneracion;
+    
+    private String usuario;
 
     public Integer getId() {
         return Id;
@@ -56,12 +63,12 @@ public class Cotizacion implements Serializable {
         this.cantidadIntegrantes = cantidadIntegrantes;
     }
 
-    public List<Grilla> getGrillas() {
-        return grillas;
+    public List<PlanCotizadoIndividual> getPlanesCotizados() {
+        return planesCotizados;
     }
 
-    public void setGrillas(List<Grilla> grillas) {
-        this.grillas = grillas;
+    public void setPlanesCotizados(List<PlanCotizadoIndividual> planesCotizados) {
+        this.planesCotizados = planesCotizados;
     }
 
     public List<CapitaRango> getCapitas() {
@@ -79,4 +86,30 @@ public class Cotizacion implements Serializable {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+    public Date getFechaVigencia() {
+        return fechaVigencia;
+    }
+
+    public void setFechaVigencia(Date fechaVigencia) {
+        this.fechaVigencia = fechaVigencia;
+    }
+
+    public Float getRemuneracion() {
+        return remuneracion;
+    }
+
+    public void setRemuneracion(Float remuneracion) {
+        this.remuneracion = remuneracion;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+    
+    
 }
