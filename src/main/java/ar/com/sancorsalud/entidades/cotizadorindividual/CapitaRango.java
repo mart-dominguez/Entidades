@@ -13,28 +13,18 @@ import ar.com.sancorsalud.entidades.general.Parentesco;
  */
 public class CapitaRango {
     
-    private Byte EdadDesde;
-	
-    private Byte EdadHasta;
+    private Byte Edad;
 	
     private Short Cantidad;
     
     private Parentesco Parentesco;
 
-    public Byte getEdadDesde() {
-        return EdadDesde;
+    public Byte getEdad() {
+        return Edad;
     }
 
-    public void setEdadDesde(byte EdadDesde) {
-        this.EdadDesde = EdadDesde;
-    }
-
-    public byte getEdadHasta() {
-        return EdadHasta;
-    }
-
-    public void setEdadHasta(byte EdadHasta) {
-        this.EdadHasta = EdadHasta;
+    public void setEdad(byte Edad) {
+        this.Edad = Edad;
     }
 
     public Short getCantidad() {
