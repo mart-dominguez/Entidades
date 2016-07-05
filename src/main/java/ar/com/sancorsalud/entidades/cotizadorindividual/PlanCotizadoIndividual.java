@@ -6,6 +6,7 @@
 package ar.com.sancorsalud.entidades.cotizadorindividual;
 
 import ar.com.sancorsalud.entidades.producto.Grilla;
+import java.util.List;
 
 /**
  *
@@ -15,5 +16,5 @@ public class PlanCotizadoIndividual {
     
     private Grilla grilla;
     
-    private Float valor;
+    private List<PlanCotizadoIndividualConcepto> conceptos;
 }
