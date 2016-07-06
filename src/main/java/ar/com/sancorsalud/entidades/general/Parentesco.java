@@ -5,12 +5,19 @@
  */
 package ar.com.sancorsalud.entidades.general;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author hzanuzzi
  */
-public class Parentesco {
+@Entity()
+public class Parentesco implements Serializable {
   
+    @Id()
     private byte codigo;
     
     private String descripcion;

@@ -31,7 +31,7 @@ public class CapitaRango implements Serializable {
     private Integer id;
     
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "IdCotizacion")
+    @JoinColumn(name = "ID_COTIZACION")
     private Cotizacion Cotizacion;
     
     @Column(name="EDAD")

@@ -5,11 +5,25 @@
  */
 package ar.com.sancorsalud.entidades.producto;
 
+import java.io.Serializable;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author hzanuzzi
  */
-public class Grilla {
+@Entity()
+public class Grilla implements Serializable {
+    
+    public Grilla()
+    {
+        this.id = new IdGrilla();
+    }
+    
+    @EmbeddedId IdGrilla id;
     
     Integer idGrilla;
     
@@ -21,6 +35,7 @@ public class Grilla {
 
     public void setIdGrilla(Integer idGrilla) {
         this.idGrilla = idGrilla;
+        this.id.idGrilla= idGrilla;
     }
 
     public Plan getPlan() {
@@ -29,6 +44,15 @@ public class Grilla {
 
     public void setPlan(Plan plan) {
         this.plan = plan;
+        this.id.idPlan = plan.Codigo;
+        this.id.idProducto = plan.Producto.Codigo;
     }
-   
+
+    public IdGrilla getId() {
+        return id;
+    }
+
+    public void setId(IdGrilla id) {
+        this.id = id;
+    }
 }

@@ -1,5 +1,8 @@
 package ar.com.sancorsalud.entidades.producto;
 
+import javax.persistence.Embeddable;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 public class Producto {
 

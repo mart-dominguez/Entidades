@@ -43,8 +43,10 @@ public class Cotizacion implements Serializable {
     @OneToMany(mappedBy = "Cotizacion")
     private List<CapitaRango> capitas;
     
+    @Column(name="Remuneracion")
     private Float remuneracion;
     
+    @Column(name="USUARIO")
     private String usuario;
 
     public Integer getId() {
