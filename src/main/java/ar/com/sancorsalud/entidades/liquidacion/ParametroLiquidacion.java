@@ -31,6 +31,8 @@ public class ParametroLiquidacion {
     
     public Cotizacion Cotizacion;
     
+    private LiquidacionEstado liquidacionEstado;
+    
     public Integer FechaInicialPeriodoLiquidacion()
     {
         return Integer.valueOf(this.PeriodoLiquidacion.toString() + "01");
@@ -48,5 +50,13 @@ public class ParametroLiquidacion {
         }
         
         return fecha;
+    }
+
+    public LiquidacionEstado getLiquidacionEstado() {
+        return liquidacionEstado;
+    }
+
+    public void setLiquidacionEstado(LiquidacionEstado liquidacionEstado) {
+        this.liquidacionEstado = liquidacionEstado;
     }
 }
