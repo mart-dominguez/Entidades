@@ -23,7 +23,7 @@ import javax.persistence.Temporal;
  * @author hzanuzzi
  */
 @Entity()
-@Table(name = "LIQUI.LIQUIDACION_ESTADO")
+@Table(name = "LIQUIDACION_ESTADO")
 public class LiquidacionEstado implements Serializable {
     
     @Id()

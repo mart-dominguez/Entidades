@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity()
-@Table(name = "COTIZADORC.COTIZACION_PLAN")
+@Table(name = "COTIZACION_PLAN")
 public class PlanCotizado implements Serializable  {
 	
         public PlanCotizado()

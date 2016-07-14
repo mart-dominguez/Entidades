@@ -17,7 +17,7 @@ import javax.persistence.Table;
  * @author hzanuzzi
  */
 @Entity()
-@Table(name="COTIZADORC.PLANES_DISP")
+@Table(name="PLANES_DISP")
 public class Plan extends ar.com.sancorsalud.entidades.producto.Plan implements Serializable {
 
     @Id()

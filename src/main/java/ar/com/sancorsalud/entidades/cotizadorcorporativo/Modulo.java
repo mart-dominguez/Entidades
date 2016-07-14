@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity()
-@Table(name = "COTIZADORC.COTIZACION_MODULOS")
+@Table(name = "COTIZACION_MODULOS")
 public class Modulo implements Serializable {
     
         public Modulo()

@@ -26,7 +26,7 @@ import javax.persistence.Transient;
  * @author hzanuzzi
  */
 @Entity
-@Table(name = "COTIZADOR.COTIZACION_PLANES")
+@Table(name = "COTIZACION_PLANES")
 public class PlanCotizadoIndividual implements Serializable {
     
     @Id()

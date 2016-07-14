@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity()
-@Table(name="SMPLIBD.M05FEMP")
+@Table(name="M05FEMP")
 public class Empresa implements Serializable {
 
         @Id

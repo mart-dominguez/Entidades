@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity()
-@Table(name = "COTIZADORC.COTIZACION_RANGO")
+@Table(name = "COTIZACION_RANGO")
 public class CapitaRango implements Serializable  {
 	
         @Id()

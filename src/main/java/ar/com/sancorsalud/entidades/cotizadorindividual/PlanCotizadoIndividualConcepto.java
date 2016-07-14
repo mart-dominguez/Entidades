@@ -20,7 +20,7 @@ import javax.persistence.Table;
  * @author hzanuzzi
  */
 @Entity
-@Table(name = "COTIZADOR.COTIZACION_PLANES_VALORES")
+@Table(name = "COTIZACION_PLANES_VALORES")
 public class PlanCotizadoIndividualConcepto implements Serializable {
     
     @Id()

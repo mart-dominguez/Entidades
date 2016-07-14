@@ -6,7 +6,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="COTIZADORC.AJ_MARGENES")
+@Table(name="AJ_MARGENES")
 public class AjusteMargen implements Serializable{
 	
 	/**

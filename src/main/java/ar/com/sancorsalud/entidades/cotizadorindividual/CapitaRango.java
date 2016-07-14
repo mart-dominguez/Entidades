@@ -22,7 +22,7 @@ import javax.persistence.Table;
  * @author hzanuzzi
  */
 @Entity()
-@Table(name = "COTIZADOR.COTIZACION_CAPITAS")
+@Table(name = "COTIZACION_CAPITAS")
 public class CapitaRango implements Serializable {
     
     @Id()

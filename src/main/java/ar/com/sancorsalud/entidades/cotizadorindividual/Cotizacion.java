@@ -20,8 +20,8 @@ import javax.persistence.Table;
  *
  * @author hzanuzzi
  */
-@Entity()
-@Table(name = "COTIZADOR.COTIZACION")
+@Entity(name = "Cotizacion2")
+@Table(name = "COTIZACION")
 public class Cotizacion implements Serializable {
     
     @Id()

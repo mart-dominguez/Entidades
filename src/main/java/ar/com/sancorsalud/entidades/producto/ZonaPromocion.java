@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity()
-@Table(name="SMPLIBD.T11FZPR")
+@Table(name="T11FZPR")
 public class ZonaPromocion implements Serializable {
 
         @Id
